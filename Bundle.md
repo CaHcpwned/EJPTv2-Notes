@@ -332,6 +332,7 @@ use auxiliary/scanner/smb/pipe_auditor
 set PASS_FILE /usr/share/wordlists/metasploit/unix_passwords.txt
 set SMBUser <USER>
 set RHOSTS <TARGET_IP>
+set verbose FALSE ---> esto es para que NO nos imprima por pantalla TODOS los intentos y sólo nos impriman los Success!
 exploit
 ```
 
