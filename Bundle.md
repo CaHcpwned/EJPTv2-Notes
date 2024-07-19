@@ -1044,7 +1044,7 @@ hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr
 # SAMBA
 smbmap -u <USER> -p '<PW>' -H <TARGET_IP>
 
-smbclient -L <TARGET_IP> -U <USER>
+smbclient -L <TARGET_IP> -U <USER>   ----> EJ.: smbclient -L //IP/uno_de_los_usuarios_(shawn) -U admin
 
 enum4linux -a <TARGET_IP>
 enum4linux -a -u "<USER>" -p "<PW>" <TARGET_IP>
