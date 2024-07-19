@@ -617,6 +617,10 @@ From,
 Tu padre pajaro.
 
 .    ----> IMPORTANTE el punto apra indicar el fin de datos
+
+
+- Otro modo con sendemail: sendemail -f admin@attacker.xyz -t root@openmailbox.xyz -s 192.26.29.3 -u
+Fakemail -m "Hi root, a fake from admin" -o tls=no
 ```
 
 #### Metasploit
