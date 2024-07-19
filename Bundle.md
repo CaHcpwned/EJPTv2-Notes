@@ -3,7 +3,9 @@
 
 ### RECUERDA 
 
-### Usar siempre "service postgresql start" cuando queramos obtener una reverse shell con msfconsole
+```bash
+· Usar siempre "service postgresql start" cuando queramos obtener una reverse shell con msfconsole
+· Usar exploits suggester
 
 ## Networking
 
