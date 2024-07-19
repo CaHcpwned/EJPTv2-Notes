@@ -589,7 +589,6 @@ nmap -sV -script banner <TARGET_IP>
 ```bash
 nc <TARGET_IP> 25
 - Para verificar si un usuario existe, una vez conectado --> VRFY <USER>@<DOMINIO_CORREO>
-- 
 telnet <TARGET_IP> 25
 
 # TELNET client - check supported capabilities
@@ -599,6 +598,25 @@ EHLO attacker.xyz
 
 ```bash
 smtp-user-enum -U /usr/share/commix/src/txt/usernames.txt -t <TARGET_IP>   ----> para saber los usuarios que hay en el diccionario en el server
+```
+
+```bash
+- Para enviar un mail falso:
+telnet <IP>
+HELO attacker.xyz
+mail from: admin@attacker.xyz
+rcpt to:root@openmailbox.xyz
+data
+Subject: Hi Root (el mensaje que sea)
+
+Hello,
+
+This is a fake mail.
+
+From,
+Tu padre pajaro.
+
+.    ----> IMPORTANTE el punto apra indicar el fin de datos
 ```
 
 #### Metasploit
