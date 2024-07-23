@@ -8,6 +8,7 @@
 
 # · Usar siempre "service postgresql start" cuando queramos obtener una reverse shell con msfconsole
 # · Usar exploits suggester
+# · Cuando obtengamos una sesión meterpreter, usar SIEMPRE getprivs para ver los privilegios que tenemos en el sistema y ver también vulns como impersonate por ej.
 
 ## Networking
 
